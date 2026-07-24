@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Form Stase Kompre&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Script wajib dari Telegram --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://telegram.org/js/telegram-web-app.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: sans-serif; padding: 15px; background-color: #f4f4f9; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.box { background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>input[type="text"] { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.item { margin-bottom: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button { width: 100%; padding: 12px; background: #0088cc; color: white; border: none; border-radius: 5px; font-size: 16px; font-weight: bold;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;👨‍⚕️ Data DPJP&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;Nama DPJP:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="dpjp_nama" placeholder="Ketik nama dokter..."&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;NIP DPJP:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="dpjp_nip" placeholder="Ketik NIP..."&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;🦠 Pilih Penyakit&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;&lt;input type="checkbox" class="penyakit" value="Aborsi mengancam"&gt; Aborsi mengancam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;&lt;input type="checkbox" class="penyakit" value="Apendisitis akut"&gt; Apendisitis akut&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 400+ List Penyakit Lainnya Akan Dimasukkan Sini --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;💉 Pilih Keterampilan&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;&lt;input type="checkbox" class="keterampilan" value="Bantuan hidup dasar"&gt; Bantuan hidup dasar&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;&lt;input type="checkbox" class="keterampilan" value="Injeksi intravena"&gt; Injeksi intravena&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 400+ List Keterampilan Lainnya Akan Dimasukkan Sini --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="kirimDataKeBot()"&gt;💾 SIMPAN &amp; KIRIM KE BOT&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Inisiasi Telegram Web App</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let tg = window.Telegram.WebApp;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tg.expand(); // Bikin tampilannya full screen di HP</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function kirimDataKeBot() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let nama = document.getElementById("dpjp_nama").value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let nip = document.getElementById("dpjp_nip").value;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Ambil semua penyakit yang diceklis</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let penyakitChecked = Array.from(document.querySelectorAll('.penyakit:checked')).map(el =&gt; el.value);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Ambil semua keterampilan yang diceklis</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let keterampilanChecked = Array.from(document.querySelectorAll('.keterampilan:checked')).map(el =&gt; el.value);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Bungkus datanya</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let dataPaket = {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>dpjp: nama,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>nip: nip,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>penyakit: penyakitChecked,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>keterampilan: keterampilanChecked</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// JURUS RAHASIA: Lempar data kembali ke Bot Telegram!</p>
+<p class="p1"><span class="Apple-converted-space">            </span>tg.sendData(JSON.stringify(dataPaket));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
