@@ -1,42 +1,4 @@
-import re
-import json
-
-print("Memproses data_kompre.txt...")
-
-with open("data_kompre.txt", "r", encoding="utf-8") as f:
-    teks = f.read()
-
-# Regex Pamungkas: Tangkap Nomor (1), Nama (2), dan Target (3)
-pola = re.compile(r"\b(\d+)\s+(.+?)\s+(?:[A-Za-z0-9\-]+\s*/\s*){3}[A-Za-z0-9\-]+\s+(\d+)\b")
-
-penyakit = []
-keterampilan = []
-mode_sekarang = "penyakit"
-angka_sebelumnya = 0
-
-for cocok in pola.finditer(teks):
-    angka_sekarang = int(cocok.group(1))
-    nama_item = cocok.group(2).strip()
-    target_item = int(cocok.group(3)) # Menangkap angka target (1, 3, 20, 0, dll)
-    
-    if angka_sekarang < angka_sebelumnya and angka_sebelumnya > 100:
-        mode_sekarang = "keterampilan"
-        
-    data_item = {"nama": nama_item, "target": target_item}
-    
-    if mode_sekarang == "penyakit":
-        penyakit.append(data_item)
-    else:
-        keterampilan.append(data_item)
-        
-    angka_sebelumnya = angka_sekarang
-
-print(f"✅ Sukses! Ditemukan {len(penyakit)} Penyakit dan {len(keterampilan)} Keterampilan (Beserta Targetnya).")
-
-# ==========================================
-# TEMPLATE HTML VERSI KALKULATOR PERSENTASE
-# ==========================================
-html_template = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
